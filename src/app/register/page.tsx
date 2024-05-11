@@ -17,7 +17,7 @@ import { signIn } from 'next-auth/react'
 
 
 
-function page() {
+function Register() {
     const [error, setError] = useState("")
     const router = useRouter();
     const isValidEmail = (email:string)=> {
@@ -92,4 +92,4 @@ function page() {
     )
 }
 
-export default page
+export default Register

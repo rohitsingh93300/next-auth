@@ -2,7 +2,7 @@ import React from 'react'
 import { getServerSession } from 'next-auth'
 import { redirect } from 'next/navigation'
 
-async function page() {
+async function Dashboard() {
   const session = await getServerSession()
   if(!session){
     redirect("/");
@@ -14,4 +14,4 @@ async function page() {
   )
 }
 
-export default page
+export default Dashboard

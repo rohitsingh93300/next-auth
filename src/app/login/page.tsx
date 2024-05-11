@@ -2,8 +2,6 @@
 import React, { useEffect, useState } from 'react'
 import {
   Card,
-  CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -16,7 +14,7 @@ import { useRouter } from 'next/navigation'
 import { signIn, useSession } from 'next-auth/react'
 
 
-function page() {
+function Login() {
   const [error, setError] = useState("")
   const router = useRouter();
   const session = useSession()
@@ -88,4 +86,4 @@ function page() {
   )
 }
 
-export default page
+export default Login
