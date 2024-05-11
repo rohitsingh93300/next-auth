@@ -71,7 +71,7 @@ function Login() {
                     <Button type='submit'>Login</Button>
                 </form>
                 <CardFooter className='flex flex-col gap-2 mt-2'>
-                 <p className='text-gray-500 text-[12px]'>Don't have an account? <Link href={'/register'} className='underline'>register here &raquo;</Link></p>
+                 <p className='text-gray-500 text-[12px]'>Dont have an account? <Link href={'/register'} className='underline'>register here &raquo;</Link></p>
                    <p className='text-gray-500 text-[14px]'>or login with Provider</p>
                     <Button onClick={()=>{signIn("github")}} variant="outline" className='flex items-center gap-4'>
                         <Image alt='github' src={'/github-logo.png'} width={20} height={20} />
